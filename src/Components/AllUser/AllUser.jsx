@@ -10,7 +10,7 @@ const AllUser = () => {
   return (
     <div>
      <div className='alluser_info'>
-     <h1>Find Your Friends</h1>
+     <h1>User List</h1>
      </div>
      <div className='alluser'>
         {userList.map((el, i)=>(

@@ -101,7 +101,11 @@ const Chat = ({
                 placeholder="type your message"
                 onChange={(e) => setMessage(e.target.value)}
               />
-              <img src={Images.file} alt="file" style={{width:"50px", height:"50px"}} />
+                <label for="file">
+                 <a className="Images"> <img src={Images.file} alt="file" style={{width:"50px", height:"50px"}} /></a>
+                  <input type="file" id="file" style={{display: "none"}} name="image" accept="image/gif,image/jpeg,image/jpg,image/png" multiple="" data-original-title="upload photos" />
+                 </label>
+             
               {loading === true ? (
                 <Loader />
               ) : (

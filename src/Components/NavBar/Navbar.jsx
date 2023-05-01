@@ -11,7 +11,7 @@ const Navbar = () => {
       link: "alluser",
     },
     {
-      menu: "Chat",
+      menu: "Consult",
       link: "/",
     },
     {
@@ -19,17 +19,10 @@ const Navbar = () => {
       link: "/",
     },
     {
-      menu: "Setting",
-      link: "/",
-    },
-    {
       menu: "FAQS",
-      link: "/",
+      link: "/query",
     },
-    {
-      menu: "Terms Of Use",
-      link: "/",
-    },
+  
   ];
 
   const [active, setActive] = useState(2);
@@ -43,7 +36,7 @@ const Navbar = () => {
       <div className="NavBar_box">
         <div className="NavBar_box_left">
           <img
-            src={Images.logo}
+            src={Images.mediLogo}
             alt="logo"
             style={{ width: "50px", height: "50px" }}
           ></img>
@@ -128,9 +121,9 @@ const Navbar = () => {
           <div className="model_box">
             <Model openBox ={setOpenModel}
             title="WELCOME TO"
-            head="CHAT BUDDY"
-            info = "This A decentralised chat application.You can talk to anyone via this application without any fear of privacy leak. It is fully secure and transparent." 
-            smallInfo= "Kindley Select Your Name..."
+            head="Electronic Health Record"
+            info = "This A decentralised Consultation Service and Health record application.You can consult to any Doctor via this application without any fear of privacy leak. It is fully secure and transparent." 
+            smallInfo= "Kindly Enter Your Name(if you are a doctor then also write your area of specialization)."
             images = {Images.hero}
             functionName = {createAccount}
             address={account}

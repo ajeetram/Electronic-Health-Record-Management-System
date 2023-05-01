@@ -29,8 +29,10 @@ import image7 from "./img7.gif";
 import image8 from "./img8.gif";
 import image9 from "./img9.gif";
 import image10 from "./img10.gif";
-
+//import medicalIcon from "./medicalIcon.png"
+import mediLogo from "./mediLogo.png"
 export default {
+  mediLogo,
   logo,
   close,
   open,

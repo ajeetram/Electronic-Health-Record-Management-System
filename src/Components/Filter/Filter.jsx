@@ -19,10 +19,10 @@ const Filter = () => {
           </div>
         </div>
         <div className='Filter_box_right'>
-          <button>
+          {/* <button>
             <img src={Images.clear} alt="clear" style={{width:"20px", height:"20px"}} />
             CLEAR CHAT
-          </button>
+          </button> */}
           <button onClick={() => setAddFriend(true)}>
             <img src={Images.user} alt="clear" style={{width:"20px", height:"20px"}} />
             ADD FRIEND
@@ -36,9 +36,9 @@ const Filter = () => {
           <Model
             openBox={setAddFriend}
             title="WELCOME TO"
-            head="CHAT BUDDY"
-            info="This A decentralised chat application.You can talk to anyone via this application without any fear of privacy leak. It is fully secure and transparent."
-            smallInfo="Kindley Select Your Friend Name & Address.."
+            head="Electronic Health Record"
+            info="This A decentralised Consultation Service and Health record application.You can consult to any Doctor via this application without any fear of privacy leak. It is fully secure and transparent."
+            smallInfo="Kindly Enter Your Friend Name & Address.."
             images={Images.hero}
             functionName={AddFriends}
           />

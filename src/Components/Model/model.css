@@ -11,19 +11,25 @@
 }
 
 .Model_box_right h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #F18303;
     line-height: .9;
 }
 
 .Model_box_right h1 span{
     display: block;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .Model_box_right small{
     font-size: 1.2rem;
     color: #F18303;
+}
+
+.Model_box_left img
+{
+    width: 700px;
+    height: 700px;
 }
 
 .Model_box_right_name_info{
@@ -89,5 +95,11 @@
         display: grid;
         grid-template-columns: 1fr;
         z-index: 11111;
+    }
+
+    .Model_box_left img
+    {
+        width: 350px;
+        height: 350px;
     }
 }

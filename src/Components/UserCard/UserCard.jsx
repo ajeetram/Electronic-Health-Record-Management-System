@@ -22,7 +22,7 @@ const UserCard = ({ el, i, AddFriends }) => {
               AddFriends({ name: el.name, accountAddress: el.accountAddress })
             }
           >
-            Add Friend
+            Connect For Consult
           </button>
         </div>
       </div>
