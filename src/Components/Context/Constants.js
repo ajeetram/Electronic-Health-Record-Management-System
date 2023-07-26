@@ -1,4 +1,4 @@
-//Contract Address : 0xC61211E87e6370dD70fA660F3D17b7Fa146F76E3
+//Contract Address : 0x2462AfEE1fEAdFc86E73b8ee3A5655D8d9Eb70E3
 import ABI from './SocialMedia.json'
-export const ChatAppAddress = "0xC61211E87e6370dD70fA660F3D17b7Fa146F76E3";
+export const ChatAppAddress = "0x2462AfEE1fEAdFc86E73b8ee3A5655D8d9Eb70E3";
 export const ChatAppABI = ABI.abi;

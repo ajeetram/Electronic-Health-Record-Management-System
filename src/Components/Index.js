@@ -8,4 +8,5 @@ import Error from './Error/Error'
 import AllUser from "./AllUser/AllUser";
 import Query from "./FAQS/Query";
 import Chat from "./Home";
-export {Navbar, Filter, Friend,Model, Loader, UserCard, Error, AllUser, Chat, Query};
+import PatientRecord from "./PatientRecord/PatientRecord";
+export {Navbar, Filter, Friend,Model, Loader, UserCard, Error, AllUser, Chat, Query,PatientRecord};
