@@ -8,15 +8,19 @@ const Navbar = () => {
   const menuItems = [
     {
       menu: "All User",
-      link: "alluser",
+      link: "/alluser",
     },
     {
       menu: "Consult",
       link: "/",
     },
+    // {
+    //   menu: "Contact",
+    //   link: "/contact",
+    // },
     {
-      menu: "Contact",
-      link: "/",
+      menu: "Patient Record",
+      link: "/patientrecord",
     },
     {
       menu: "FAQS",

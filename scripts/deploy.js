@@ -8,7 +8,7 @@ const hre = require("hardhat");
 
 async function main() {
 
-  const healthRecord = await hre.ethers.getContractFactory("healthRecord");
+  const healthRecord = await hre.ethers.getContractFactory("upload");
   const EHR = await healthRecord.deploy();
 
   await EHR.deployed();
