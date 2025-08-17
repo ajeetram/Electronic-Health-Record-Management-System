@@ -44,8 +44,8 @@ system is secure and transparent, providing
 patients with complete confidence in the
 integrity of their medical records
 
-#workflow
-
+# EHR Workflow
+```
 EHR
 ├── Structs
 │   ├── User
@@ -87,6 +87,7 @@ EHR
 └── Events
     ├── AccountCreated(address indexed, string)
     └── FriendAdded(address indexed, address indexed, string)
+```
 
 # Tech Stack :
 - Solidity
