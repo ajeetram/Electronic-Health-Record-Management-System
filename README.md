@@ -44,6 +44,50 @@ system is secure and transparent, providing
 patients with complete confidence in the
 integrity of their medical records
 
+#workflow
+
+EHR
+├── Structs
+│   ├── User
+│   │   ├── name (string)
+│   │   └── friendList (Friend[])
+│   ├── Friend
+│   │   ├── pub_key (address)
+│   │   └── name (string)
+│   ├── Message
+│   │   ├── sender (address)
+│   │   ├── timestamp (uint256)
+│   │   └── msg (string)
+│   └── AllUserStruct
+│       ├── name (string)
+│       └── accountAddress (address)
+├── State Variables
+│   ├── getAllUsers (AllUserStruct[])
+│   ├── userList (mapping(address => User))
+│   └── allMsges (mapping(bytes32 => Message[]))
+├── Functions
+│   ├── checkUserExists(address)
+│   │   └── returns (bool)
+│   ├── createAccount(string calldata)
+│   ├── getUserName(address)
+│   │   └── returns (string memory)
+│   ├── addFriend(address, string calldata)
+│   ├── checkAlreadyFrnd(address, address)
+│   │   └── returns (bool)
+│   ├── _addFriend(address, address, string memory)
+│   ├── getMyFriendList()
+│   │   └── returns (Friend[] memory)
+│   ├── _getChatCode(address, address)
+│   │   └── returns (bytes32)
+│   ├── sendMessage(address, string calldata)
+│   ├── readMessage(address)
+│   │   └── returns (Message[] memory)
+│   └── getAllAppUser()
+│       └── returns (AllUserStruct[] memory)
+└── Events
+    ├── AccountCreated(address indexed, string)
+    └── FriendAdded(address indexed, address indexed, string)
+
 # Tech Stack :
 - Solidity
 - Hardhat
