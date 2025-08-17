@@ -87,6 +87,26 @@ EHR
 └── Events
     ├── AccountCreated(address indexed, string)
     └── FriendAdded(address indexed, address indexed, string)
+
+
+UploadeEHR
+├── Structs
+│   └── Access
+│       ├── user (address)
+│       └── access (bool)
+├── State Variables
+│   ├── value (mapping(address => string[]))
+│   ├── accessList (mapping(address => Access[]))
+│   ├── ownership (mapping(address => mapping(address => bool)))
+│   └── previousData (mapping(address => mapping(address => bool)))
+└── Functions
+    ├── add(address, string memory)
+    ├── allow(address)
+    ├── disAllow(address)
+    └── display(address)
+        └── returns (string[] memory)
+    └── shareAccess()
+        └── returns (Access[] memory)
 ```
 
 # Tech Stack :
